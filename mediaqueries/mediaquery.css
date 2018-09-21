@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 0;
+}
+
+
+header {
+    width: 100%;
+    background-color: #6A1384;
+    color: #FFF;
+    text-align: center;
+}
+
+header>div {
+    padding: 20px;
+    font-size: 50px;
+}
+
+header .small-title {
+    display: none;
+}
+
+.sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #eaeaea;
+    position: fixed;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 10px;
+    color: #000;
+}
+
+@media screen and ( max-width: 600px) {
+    .big-title{
+        display: none;
+    }
+    header .small-title{
+        display: block;
+    }
+}
+@media screen and (max-width:600px)  
+{
+    .sidebar{
+        height: 80%;
+        width: 170px;
+    }
+}
+@media screen and   (max-width:400px){
+    .sidebar{ display: none;}
+}
+@media print {
+header {
+ display: none;
+}
+}
+@media print {
+.sidebar {
+ display: none;
+}
+}
+@media screen and (orientation: portrait) and (max-width:700px) , (orientation:landscape){
+.sidebar {
+right: 0px;
+}
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    body {
+        background-color: black;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background-color: aquamarine;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        background-color: green;
+    }
+}
+
+@media screen and (max-width: 600) {
+    body {
+        background-color: red;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+        }
+
+        .images {}
+
+        .images img {
+            max-height: 145px;
+            width: 20%;
+            float: left;
+            display: block;
+            
+        }
+
+        @media screen and (max-width: 1000px) {
+            .images img {
+                width: 33.333%;
+                float: left;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .images img {
+                width: 50%;
+                float: left;
+                display: block;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            .images img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="images">
+        <img src="https://static.boredpanda.com/blog/wp-content/uploads/2016/05/accidental-art-8-5745a1c09a12b__605.jpg">
+        <img src="https://images.pexels.com/photos/962312/pexels-photo-962312.jpeg">
+        <img src="https://images.pexels.com/photos/89095/pexels-photo-89095.jpeg">
+        <img src="https://static.boredpanda.com/blog/wp-content/uploads/2016/05/accidental-art-14-5745a1d48b637__605.jpg">
+        <img src="https://static.boredpanda.com/blog/wp-content/uploads/2016/05/accidental-art-13-5745a1d137922__605.jpg">
+        <img src="https://static.boredpanda.com/blog/wp-content/uploads/2016/05/accidental-art-3-5745a1acc118d__605.jpg">
+        <img src="https://static.boredpanda.com/blog/wp-content/uploads/2016/05/accidental-art-9-5745a1c492cdb__605.jpg">
+        <img src="https://www.bloomberg.com/features/2017-art-auction-estimates-quiz/img/art-quiz-bloomberg-question-02.jpg">
+        <img src="https://images.mapsofindia.com/my-india/2014/11/art.jpg">
+        <img src="https://images.pexels.com/photos/89095/pexels-photo-89095.jpeg">
+    </div>
+</body>
+
+</html>
