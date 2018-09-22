@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0%;
+        }
+
+        body {
+            font-family: 'Nanum Gothic', sans-serif;
+            margin-top: 80px;
+
+        }
+
+        .flag {
+            background-color: white;
+            height: 244px;
+            width: 348px;
+            border: 1px solid black;
+            margin: auto;
+            display: flex;
+            transition: transform 1s ease-in;
+
+        }
+
+        .flag::after {
+            content: "";
+            background-color: red;
+            width: 150px;
+            height: 150px;
+            display: block;
+            border-radius: 52%;
+            margin: auto;
+        }
+        .flag:hover{
+            /* background-color: red; */
+            transform: scale(1.0) rotate(360deg);
+        }
+ .flag:hover::after{
+     /* background-color: white; */
+     transform: scale(1.0) rotate(360deg);
+ }
+  
+
+
+        .flag_sv {
+            background-color: blue;
+            height: 244px;
+            width: 348px;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 20px;
+            position: relative;
+            transition: transform 1s ease-in;
+        }
+
+        .flag_sv::before {
+            content: "";
+            background-color: #FFEB3B;
+            width: 346px;
+            height: 50px;
+            display: block;
+            margin: auto;
+            position: absolute;
+            top: 40%;
+
+        }
+
+        .flag_sv::after {
+            content: "";
+            background-color: #FFEB3B;
+            width: 50px;
+            height: 243px;
+            display: block;
+            margin: auto;
+            /* right: 11px; */
+            position: absolute;
+            right: 65%;
+            transform: translate (-50%, -50%);
+            
+        }
+        .flag_sv:hover{
+            background-color: red;
+            transform: scale(1.0) rotate(360deg);
+        }
+ .flag_sv:hover::after{
+     background-color: white;
+     transform: scale(1.0) rotate(360deg);
+ }
+ .flag_sv:hover::before{
+     background-color: white;
+     transform: scale(1.0) rotate(360deg);
+ }
+    </style>
+</head>
+
+<body>
+    <div class="flag">
+
+    </div>
+
+    <div class="flag_sv">
+
+    </div>
+</body>
+
+</html>
