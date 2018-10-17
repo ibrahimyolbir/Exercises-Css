@@ -39,7 +39,7 @@ height: 55px;
 }
  .nav-bar .nav-bar-section{
      background-color: #37474e;
-     height: 81vh;
+     height: 685px;
  } 
  .nav-bar .nav-bar-section .content{
     padding: 50px 0px 0px 50px;
@@ -68,7 +68,7 @@ height: 55px;
     float: left;
     overflow: hidden;
     width: calc(100% - 235px);
-    height: 100vh;
+    height: 812px;
  }
  .main .main-header{
     box-shadow: 0px 3px 1px 0px #c8cbcc;
@@ -81,11 +81,15 @@ height: 55px;
     font-family: sans-serif;
     color: #7b7b7b;
  }
- .main img {
+ .main .main-middle{
+     height: 500px;
+ }
+ .main .main-middle img {
     width: 50%;
     height: auto;
  }
-
- footer{
-  
- }
+@media screen and (max-width:500px){
+    .nav-bar .nav-bar-section {
+        height: 660px;
+    }
+}
